@@ -19,8 +19,8 @@ const managerQ = [
     },
     {
         type: 'input',
-        name: 'officNumber',
-        message: 'whats the manager offic number'
+        name: 'officeNumber',
+        message: 'whats the manager office number'
     }
 ]
 

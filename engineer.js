@@ -1,40 +1,40 @@
 const employee = require('./emloyee')
 
 
-const engneerQ = [
+const engineerQ = [
     {
         type: 'input',
         name: 'name',
-        message: 'whats the engneer name'
+        message: 'whats the engineer name'
     },
     {
         type: 'input',
         name: 'id',
-        message: 'whats the engneer id'   
+        message: 'whats the engineer id'   
     },
     {
         type: 'input',
         name: 'email',
-        message: 'whats the engneer email'
+        message: 'whats the engineer email'
     },
     {
         type: 'input',
         name: 'github',
-        message: 'whats the engneer github'
+        message: 'whats the engineer github'
     }
 ]
 
-class engneer extends employee {
+class engineer extends employee {
     constructor(name, id, email, github) {
         super(name, id, email);
         this.github = github;
     }
     getRole(){
-        return 'engneer'
+        return 'engineer'
     }
     getGithub(){
         return this.github;
     }
 
 }
-module.exports = { engneer, engneerQ};
+module.exports = { engineer, engineerQ};

@@ -2,7 +2,7 @@ const inquirer = require('inquirer')
 const build = require('./pageT')
 const writeFile = require('./writeF')
 
-const {engneer, engneerQ } = require('./engneer')
+const {engineer, engineerQ } = require('./engineer')
 const {manager, managerQ} = require('./manager')
 const {intern, internQ} = require('./intern')
 // const build = require('./pageT')
@@ -22,8 +22,8 @@ employeeA.push(answers);
 
 
 
-const engneerQe = () => {inquirer.prompt(engneerQ).then((answers) => {
-answers = new engneer(answers.name, answers.id, answers.email, answers.github) 
+const engineerQe = () => {inquirer.prompt(engineerQ).then((answers) => {
+answers = new engineer(answers.name, answers.id, answers.email, answers.github) 
 employeeA.push(answers);
  return employeePrompt()
 
@@ -47,12 +47,12 @@ const employeePrompt = () => {
         message: "What kind of team member would you like to add?",
         choices: [
             {name: 'Intern', value: "addIntern"},
-            {name: 'Engneer', value: "addEngneer"},
+            {name: 'Engineer', value: "addEngineer"},
             {name: 'DONE', value: "done"}
         ]
     }])
     .then( answer => {
-        if (answer.employeeType === 'addEngneer') { engneerQe(); };
+        if (answer.employeeType === 'addEngineer') { engineerQe(); };
         if (answer.employeeType === 'addIntern') { internQe(); };
         if (answer.employeeType === 'done') {
             let html = build(employeeA)

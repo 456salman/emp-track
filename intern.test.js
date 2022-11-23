@@ -1,7 +1,7 @@
 
 const { inteern, intern } = require('./intern')
 
-test('engneer', () => {
+test('engineer', () => {
     const employee = new intern('', 333, '')
 expect(intern.name).toEqual(expect.any(String))
 
