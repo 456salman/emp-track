@@ -3,7 +3,7 @@ const manager = managerData => {
     <div class="card-body">
       <h5 class="card-title">Name:${managerData.getName()}</h5>
       <h6 class="card-subtitle mb-2 text-muted">${managerData.getRole()}</h6>
-      <p class="card-text">ID:${managerData.getId()}</p>
+      <p class="card-text">ID: ${managerData.getId()}</p>
       <a href="mailto:${managerData.getEmail()}" class="card-link">Email:${managerData.getEmail()}</a>
       <a href="#" class="card-link">Number:${managerData.getOfficeNumber()}</a>
     </div>
@@ -15,11 +15,11 @@ const manager = managerData => {
 const intern = internData => {
     return `<div id="${internData.getRole()}" class="card" style="width: 18rem;">
     <div class="card-body">
-      <h5 class="card-title">Name${internData.getName()}</h5>
-      <h6 class="card-subtitle mb-2 text-muted">Role:${internData.getRole()}</h6>
-      <p class="card-text">ID:${internData.getId()}</p>
-      <a href="mailto:${internData.getEmail()}" class="card-link">Email:${internData.getEmail()}</a>
-      <a href="" class="card-link">School:${internData.getSchool()}</a>
+      <h5 class="card-title">Name: ${internData.getName()}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Role: ${internData.getRole()}</h6>
+      <p class="card-text">ID: ${internData.getId()}</p>
+      <a href="mailto:${internData.getEmail()}" class="card-link">Email: ${internData.getEmail()}</a>
+      <a href="" class="card-link">School: ${internData.getSchool()}</a>
     </div>
   </div>`
 }
@@ -29,11 +29,11 @@ const intern = internData => {
 const engineer = engineerData => {
     return `<div id="${engineerData.getRole()}" class="card" style="width: 18rem;">
     <div class="card-body">
-      <h5 class="card-title">Name:${engineerData.getName()}</h5>
-      <h6 class="card-subtitle mb-2 text-muted">Role:${engineerData.getRole()}</h6>
-      <p class="card-text">ID:${engineerData.getId()}</p>
-      <a href="mailto:${engineerData.getEmail()}" class="card-link">Email:${engineerData.getEmail()}</a>
-      <a href="https://github.com/${engineerData.getGithub()}" class="card-link">Github:${engineerData.getGithub()}</a>
+      <h5 class="card-title">Name: ${engineerData.getName()}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Role: ${engineerData.getRole()}</h6>
+      <p class="card-text">ID: ${engineerData.getId()}</p>
+      <a href="mailto:${engineerData.getEmail()}" class="card-link">Email: ${engineerData.getEmail()}</a>
+      <a href="https://github.com/${engineerData.getGithub()}" class="card-link">Github: ${engineerData.getGithub()}</a>
     </div>
   </div>`
 }
